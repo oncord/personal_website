@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Portfolio - Undergraduate Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Optimized Background -->
+    <div class="space-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Richard's Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="animated-name"></span></h1>
+                <p class="hero-subtitle"></p>
+                <div class="hero-bottom-section">
+                    <div class="hero-left-content">
+                        <div class="headshot-container">
+                            <img src="headshot.jpg" alt="Richard M." class="headshot">
+                        </div>
+                        <div class="hero-buttons">
+                            <button onclick="window.open('https://github.com/oncord', '_blank');" class="btn btn-primary">GitHub</button>
+                            <a href="#linkedin" class="btn btn-primary">LinkedIn</a>
+                            <a href="#contact" class="btn btn-primary">Contact</a>
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                        </div>
+                    </div>
+                    <div class="console-animation">
+                        <div class="console-header">
+                            <div class="console-buttons">
+                                <div class="console-btn close"></div>
+                                <div class="console-btn minimize"></div>
+                                <div class="console-btn maximize"></div>
+                    </div>
+                            <div class="console-title">Terminal - Portfolio.cpp</div>
+                </div>
+                        <div class="console-body">
+                            <div class="console-line">
+                                <span class="prompt">$</span> <span class="command">gcc -o portfolio portfolio.c</span>
+                            </div>
+                            <div class="console-line">
+                                <span class="prompt">$</span> <span class="command">./portfolio</span>
+                            </div>
+                            <div class="console-output">
+                                <div class="output-line" data-text="Name: Richard M."></div>
+                                <div class="output-line" data-text="Colleges: Washington University in St. Louis, William Jewell College"></div>
+                                <div class="output-line" data-text="Majors: Computer Science, Mathematics"></div>
+                                <div class="output-line" data-text="Clubs: WashU Robotics, Google Developer Group WashU, BearShell"></div>
+                                <div class="output-line" data-text="Hometown: Saint Peters, MO"></div>
+                                <div class="output-line" data-text="Status: Undergraduate Student"></div>
+                            </div>
+                            <div class="console-cursor">█</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Richard</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a dual-enrolled student studying Computer Science and Mathematics at WashU & William Jewell College. My academic journey began at William Jewell College, where I discovered my passion for computation and technical innovation between math curriculum. </p>
+                    <p>After establishing a strong foundation at William Jewell, I transferred to Washington University in St. Louis to pursue more advanced coursework and opportunities related to Computer Science. This transition allowed me to dive deeper into software engineering principles, low-level systems programming, and hardware-software integrations along with a dab of machine learning. My coursework challenged me to think critically about system design, optimization, and scalable solutions.</p>
+                    <p>Throughout my undergraduate experience, I've worked on diverse projects ranging from bare-metal STM32 firmware development in C to full-stack web applications being deployed to AWS. This breadth of experience has taught me to adapt quickly to new technologies and frameworks while maintaining a focus on writing clean, efficient, and maintainable code.</p>
+                    <p>As I approach graduation, I'm excited to transition into industry where I can apply my academic knowledge to real-world problems, contribute to innovative projects, and continue growing as a software engineer.</p>
+                    
+                    <div class="academic-journey">
+                        <h3>My Journey So Far...</h3>
+                        <div class="journey-graph">
+                                            <div class="journey-node jewell">
+                    <div class="node-logo">
+                        <img src="wjc.png" alt="William Jewell College Logo" class="college-logo">
+                    </div>
+                </div>
+                            <div class="journey-arrow">
+                                <div class="arrow-line"></div>
+                                <div class="arrow-head"></div>
+                            </div>
+                                            <div class="journey-node washu">
+                    <div class="node-logo">
+                        <img src="washu.png" alt="Washington University Logo" class="college-logo">
+                    </div>
+                </div>
+                            <div class="journey-arrow">
+                                <div class="arrow-line"></div>
+                                <div class="arrow-head"></div>
+                            </div>
+                            <div class="journey-node industry">
+                                <div class="node-logo">🏙️</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Meyer HVAC Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/images/meyer-hvac-demo.gif" alt="Meyer HVAC System Demo" class="project-demo">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Meyer HVAC System</h3>
+                                <p>Full-Stack Web Application</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                    </div>
+                        </div>
+                        </div>
+                        </div>
+                    <div class="project-content">
+                        <h3>Meyer HVAC System</h3>
+                        <p>HVAC system management with frontend/backend integration</p>
+                        <div class="project-links">
+                        <a href="projects/meyer-hvac.html" class="btn btn-primary">View Project</a>
+                        <button class="btn btn-secondary open-montage" data-target="hvac">Play Montage</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Iris Classifier Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/images/iris-classifier-demo.png" alt="Iris Classification Model Demo" class="project-demo">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Iris Classification Model</h3>
+                                <p>Machine Learning</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Scikit-learn</span>
+                                    <span class="tech-tag">Pandas</span>
+                    </div>
+                        </div>
+                        </div>
+                        </div>
+                    <div class="project-content">
+                        <h3>Iris Classification Model</h3>
+                        <p>Classification algorithms with data preprocessing and visualization</p>
+                        <div class="project-links">
+                        <a href="projects/iris-classifier.html" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Programming Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/images/network-demo.gif" alt="Client-Server Applications Demo" class="project-demo">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Client-Server Applications</h3>
+                                <p>Network Programming</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">C</span>
+                                    <span class="tech-tag">TCP/IP</span>
+                                    <span class="tech-tag">Sockets</span>
+                    </div>
+                        </div>
+                        </div>
+                        </div>
+                    <div class="project-content">
+                        <h3>Client-Server Applications</h3>
+                        <p>TCP/IP communication protocols implementation with real-time messaging</p>
+                        <div class="project-links">
+                            <a href="projects/network-programming.html" class="btn btn-primary">View Project</a>
+                        </div>
+                        </div>
+                        </div>
+
+                <!-- Spotify Analytics Dashboard Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="projects/images/spotify-dashboard-demo.gif" alt="Spotify Analytics Dashboard Demo" class="project-demo">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Spotify Analytics Dashboard</h3>
+                                <p>Full-Stack Web Application</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">Spotify API</span>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Spotify Analytics Dashboard</h3>
+                        <p>Personal music analytics platform with OAuth2 authentication and data visualization</p>
+                        <div class="project-links">
+                            <a href="projects/spotify-dashboard.html" class="btn btn-primary">View Project</a>
+                            <button class="btn btn-secondary open-montage" data-target="spotify">Play Montage</button>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Cache Simulator Project -->
+                 <div class="code-object">
+                     <div class="code-header">
+                         <span class="keyword">class</span> <span class="class-name">CacheSimulatorProject</span> <span class="punctuation">{</span>
+                     </div>
+                     <div class="code-body">
+                         <div class="property">
+                             <span class="keyword">constructor</span><span class="punctuation">()</span> <span class="punctuation">{</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">name</span> <span class="operator">=</span> <span class="string">"Cache Simulator"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">type</span> <span class="operator">=</span> <span class="string">"Computer Architecture"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">technologies</span> <span class="operator">=</span> <span class="punctuation">[</span><span class="string">"C"</span><span class="punctuation">,</span> <span class="string">"Memory Management"</span><span class="punctuation">,</span> <span class="string">"Cache Algorithms"</span><span class="punctuation">]</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">description</span> <span class="operator">=</span> <span class="string">"CPU cache simulation with LRU/LFU policies"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">status</span> <span class="operator">=</span> <span class="string">"Completed"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             <span class="punctuation">}</span>
+                         </div>
+                     </div>
+                     <div class="code-footer">
+                         <span class="punctuation">}</span>
+                     </div>
+                     <div class="project-button">
+                         <a href="projects/cache-simulator.html" class="btn btn-primary">View Project</a>
+                     </div>
+                 </div>
+
+                 <!-- Dynamic Memory Allocator Project -->
+                 <div class="code-object">
+                     <div class="code-header">
+                         <span class="keyword">class</span> <span class="class-name">DynamicMemoryAllocatorProject</span> <span class="punctuation">{</span>
+                     </div>
+                     <div class="code-body">
+                         <div class="property">
+                             <span class="keyword">constructor</span><span class="punctuation">()</span> <span class="punctuation">{</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">name</span> <span class="operator">=</span> <span class="string">"Custom Dynamic Memory Allocator"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">type</span> <span class="operator">=</span> <span class="string">"System Programming"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">technologies</span> <span class="operator">=</span> <span class="punctuation">[</span><span class="string">"C"</span><span class="punctuation">,</span> <span class="string">"Memory Management"</span><span class="punctuation">,</span> <span class="string">"Heap Allocation"</span><span class="punctuation">]</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">description</span> <span class="operator">=</span> <span class="string">"Custom malloc/free implementation with fragmentation handling"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">status</span> <span class="operator">=</span> <span class="string">"Completed"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             <span class="punctuation">}</span>
+                         </div>
+                     </div>
+                     <div class="code-footer">
+                         <span class="punctuation">}</span>
+                     </div>
+                     <div class="project-button">
+                         <a href="projects/memory-allocator.html" class="btn btn-primary">View Project</a>
+                     </div>
+                 </div>
+
+                 <!-- Linux Kernel Module Project -->
+                 <div class="code-object">
+                     <div class="code-header">
+                         <span class="keyword">class</span> <span class="class-name">LinuxKernelModuleProject</span> <span class="punctuation">{</span>
+                     </div>
+                     <div class="code-body">
+                         <div class="property">
+                             <span class="keyword">constructor</span><span class="punctuation">()</span> <span class="punctuation">{</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">name</span> <span class="operator">=</span> <span class="string">"Linux Kernel Module Driver"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">type</span> <span class="operator">=</span> <span class="string">"Kernel Development"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">technologies</span> <span class="operator">=</span> <span class="punctuation">[</span><span class="string">"C"</span><span class="punctuation">,</span> <span class="string">"Linux Kernel"</span><span class="punctuation">,</span> <span class="string">"Device Drivers"</span><span class="punctuation">]</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">description</span> <span class="operator">=</span> <span class="string">"Loadable kernel module for hardware interfacing"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">status</span> <span class="operator">=</span> <span class="string">"Completed"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             <span class="punctuation">}</span>
+                         </div>
+                     </div>
+                     <div class="code-footer">
+                         <span class="punctuation">}</span>
+                     </div>
+                     <div class="project-button">
+                         <a href="projects/kernel-module.html" class="btn btn-primary">View Project</a>
+                     </div>
+                 </div>
+                 <!-- Bare-Metal Firmware Project -->
+                 <div class="code-object">
+                     <div class="code-header">
+                         <span class="keyword">class</span> <span class="class-name">BareMetalFirmwareProject</span> <span class="punctuation">{</span>
+                     </div>
+                     <div class="code-body">
+                         <div class="property">
+                             <span class="keyword">constructor</span><span class="punctuation">()</span> <span class="punctuation">{</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">name</span> <span class="operator">=</span> <span class="string">"Bare-Metal Firmware for Flight Controller"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">type</span> <span class="operator">=</span> <span class="string">"Embedded Systems"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">technologies</span> <span class="operator">=</span> <span class="punctuation">[</span><span class="string">"C"</span><span class="punctuation">,</span> <span class="string">"ARM Assembly"</span><span class="punctuation">,</span> <span class="string">"RTOS"</span><span class="punctuation">]</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">description</span> <span class="operator">=</span> <span class="string">"Real-time flight control system without OS"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">status</span> <span class="operator">=</span> <span class="string">"Completed"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             <span class="punctuation">}</span>
+                         </div>
+                     </div>
+                     <div class="code-footer">
+                         <span class="punctuation">}</span>
+                     </div>
+                     <div class="project-button">
+                         <a href="projects/firmware.html" class="btn btn-primary">View Project</a>
+                     </div>
+                 </div>
+
+                 <!-- Mock Filesystem Project -->
+                 <div class="code-object">
+                     <div class="code-header">
+                         <span class="keyword">class</span> <span class="class-name">MockFilesystemProject</span> <span class="punctuation">{</span>
+                     </div>
+                     <div class="code-body">
+                         <div class="property">
+                             <span class="keyword">constructor</span><span class="punctuation">()</span> <span class="punctuation">{</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">name</span> <span class="operator">=</span> <span class="string">"Mock Filesystem (OOP)"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">type</span> <span class="operator">=</span> <span class="string">"Object-Oriented Design"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">technologies</span> <span class="operator">=</span> <span class="punctuation">[</span><span class="string">"C++"</span><span class="punctuation">,</span> <span class="string">"OOP"</span><span class="punctuation">,</span> <span class="string">"File Systems"</span><span class="punctuation">]</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">description</span> <span class="operator">=</span> <span class="string">"Virtual filesystem with directory tree and file operations"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             &nbsp;&nbsp;<span class="keyword">this</span><span class="punctuation">.</span><span class="property-name">status</span> <span class="operator">=</span> <span class="string">"Completed"</span><span class="punctuation">;</span>
+                         </div>
+                         <div class="property">
+                             <span class="punctuation">}</span>
+                         </div>
+                     </div>
+                     <div class="code-footer">
+                         <span class="punctuation">}</span>
+                     </div>
+                     <div class="project-button">
+                         <a href="projects/mock-filesystem.html" class="btn btn-primary">View Project</a>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Montage Windows -->
+    <div class="floating-window" id="window-hvac" role="dialog" aria-label="Meyer HVAC montage" aria-modal="false">
+        <div class="floating-header">
+            <div class="floating-buttons">
+                <span class="circle close" data-close="window-hvac"></span>
+                <span class="circle minimize"></span>
+                <span class="circle maximize"></span>
+            </div>
+            <div class="floating-title">Meyer HVAC - Montage</div>
+        </div>
+        <div class="floating-body">
+            <video class="demo-video" controls preload="metadata" poster="projects/images/meyer-hvac-demo.gif">
+                <source src="projects/videos/meyer-hvac-montage.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <div class="floating-window" id="window-spotify" role="dialog" aria-label="Spotify Dashboard montage" aria-modal="false">
+        <div class="floating-header">
+            <div class="floating-buttons">
+                <span class="circle close" data-close="window-spotify"></span>
+                <span class="circle minimize"></span>
+                <span class="circle maximize"></span>
+            </div>
+            <div class="floating-title">Spotify Dashboard - Montage</div>
+        </div>
+        <div class="floating-body">
+            <video class="demo-video" controls preload="metadata" poster="projects/images/spotify-dashboard-demo.gif">
+                <source src="projects/videos/spotify-dashboard-montage.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@university.edu</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/yourprofile</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/yourusername</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CS Portfolio</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
